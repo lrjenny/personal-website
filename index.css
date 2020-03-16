@@ -12,13 +12,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0px 10px;
 }
 
 .Logo {
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
 }
 
 .Text {
@@ -49,6 +48,7 @@ body {
 @media (orientation: landscape) {
     body {
         font-size: 1rem;
+        text-align: left;
     }
 
     .Container {
@@ -57,6 +57,11 @@ body {
 
     .Text {
         margin-left: 50px;
+    }
+
+    .Logo {
+        min-width: 250px;
+        min-height: 250px;
     }
   }
   
@@ -68,15 +73,15 @@ body {
 
     .Container {
         flex-direction: column;
-        margin: 0px 10px;
     }
     
     .Text {
         align-items: center;
+        margin-left: 0;
     }
 
     .Logo {
-        width: 400px;
-        height: 400px;
+        min-width: 400px;
+        min-height: 400px;
     }
   }
