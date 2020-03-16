@@ -1,11 +1,10 @@
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
     user-select: none;
 }
 
@@ -16,6 +15,7 @@ body {
 }
 
 .Logo {
+    justify-content: center;
     align-items: center;
     width: 250px;
     height: 250px;
@@ -26,23 +26,57 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
 }
 
 .Title {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: bold;
 }
 
 .SubTitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: #333333;
 }
 
 .Skills {
     margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     color: lightgrey;
 }
+
+@media (orientation: landscape) {
+    body {
+        font-size: 1rem;
+    }
+
+    .Container {
+        flex-direction: row;
+    }
+
+    .Text {
+        margin-left: 50px;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    body {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .Container {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+    
+    .Text {
+        align-items: center;
+    }
+
+    .Logo {
+        width: 400px;
+        height: 400px;
+    }
+  }
