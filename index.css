@@ -15,11 +15,6 @@ body {
     margin: 0px 10px;
 }
 
-.Logo {
-    justify-content: center;
-    align-items: center;
-}
-
 .Text {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -56,12 +51,12 @@ body {
     }
 
     .Text {
-        margin-left: 50px;
+        margin-left: 5px;
     }
 
     .Logo {
-        min-width: 250px;
-        min-height: 250px;
+        min-width: 400px;
+        min-height: 400px;
     }
   }
   
