@@ -40,6 +40,14 @@ body {
     color: lightgrey;
 }
 
+noscript {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (orientation: landscape) {
     body {
         font-size: 1rem;
